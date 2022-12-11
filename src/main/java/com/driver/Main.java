@@ -5,10 +5,11 @@ import java.lang.*;
 
 public class Main
 {
-    public static class P{
+    public static class Product{
         int a;
         int b;
         int c;
+
         int product(int a,int b){
             int c = a*b;
             return c;
@@ -24,9 +25,9 @@ public class Main
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        P p = new P();
-        System.out.println(p.product(1,2));
-        System.out.println(p.product(2,3,4));
-        System.out.println(p.product(1.2,3.4));
+        Product p = new Product();
+        p.product(1,2);
+        p.product(2,3,4);
+        p.product(1.2,3.4);
     }
 }
