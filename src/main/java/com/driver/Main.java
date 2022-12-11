@@ -5,27 +5,25 @@ import java.lang.*;
 
 public class Main
 {
-    public static class Product{
-        int a;
-        int b;
-        int c;
+    static class Product{
 
-        int product(int a,int b){
-            int c = a*b;
-            return c;
+       public int product(int a,int b){
+
+            return a*b ;
         }
-        int product(int a,int b,int c){
-            int d = a*b*c;
-            return d;
+        public int product(int a,int b,int c){
+
+            return a*b*c ;
         }
-        double product(double a,double b){
-            double ans = a*b;
-            return ans;
+        public double product(double a,double b){
+
+            return (double)a*b ;
         }
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Product p = new Product();
+
         p.product(1,2);
         p.product(2,3,4);
         p.product(1.2,3.4);
